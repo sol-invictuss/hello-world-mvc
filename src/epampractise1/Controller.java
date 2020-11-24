@@ -35,7 +35,7 @@ public class Controller {
                 break;
         }
         
-        System.out.println(View.READY_MESSAGE + ": " + Model.READY_TEXT);
+        view.showMessage(View.READY_MESSAGE + ": " + Model.READY_TEXT);
         
         
     }

@@ -15,7 +15,7 @@ public class View {
     public static String READY_MESSAGE = "The sentence is entered correctly";
     
     public void showMessage(String text) {
-        System.out.println(INIT_MESSAGE);
+        System.out.println(text);
         
     }
 }
