@@ -36,7 +36,7 @@ public class Model {
 
                 if(!getMessage().toUpperCase().contains(line.toUpperCase())) {
                     appendMessage(line);
-                    if(line.toUpperCase().equals("WORLD") && message.toUpperCase().contains("HELLO"))
+                    if(line.toUpperCase().equals("WORLD"))
                         return true;
                 }
             }
