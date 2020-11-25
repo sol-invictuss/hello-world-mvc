@@ -31,7 +31,7 @@ public class Controller {
         Scanner in = new Scanner(System.in);
         while(true) {
             String line = in.nextLine();
-            if(model.checkForCorrectness(line))
+            if(model.checkForCorrectnessAndAdd(line))
                 break;
         }
         

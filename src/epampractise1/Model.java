@@ -12,7 +12,7 @@ package epampractise1;
 public class Model {
 
     
-    public static String READY_TEXT = "Hello World";
+    public static String READY_TEXT = "HELLO WORLD";
     
     private String message;
     
@@ -28,16 +28,20 @@ public class Model {
         return message;
     }
     
-    public boolean checkForCorrectness(String line) 
+    public boolean checkForCorrectnessAndAdd(String line) 
     {
         if(Model.READY_TEXT
-                    .toUpperCase()
                     .contains(line.toUpperCase())) {
 
-                if(!getMessage().toUpperCase().contains(line.toUpperCase())) {
-                    appendMessage(line);
-                    if(line.toUpperCase().equals("WORLD"))
+                if(!getMessage().contains(line.toUpperCase())) {
+
+                    if(line.toUpperCase().equals("WORLD") && getMessage().toUpperCase().contains("HELLO")) {
+                        appendMessage(line);
                         return true;
+                    } else {
+                        appendMessage(line);
+                    }
+                        
                 }
             }
         return false;
